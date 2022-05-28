@@ -28,6 +28,10 @@ body{
     font-size: 1.8em;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.header-container .logo span{
+    color: #835714;
+    text-transform: capitalize;
+}
 
 /* div-action */
 .menu-action{
@@ -89,6 +93,32 @@ body{
 .header-container .menu-hollie  .menu li:nth-child(1){
     margin-top: 40%;
 }
+.header-container .menu-hollie  .menu li:nth-child(4),.header-container .menu-hollie  .menu li:nth-child(5),.header-container .menu-hollie  .menu li:nth-child(6){
+    display: inline-block;
+    font-size: .85em;
+    margin-top: 10%;
+}
+.header-container .menu-hollie  .menu li i{
+    color: #000;
+    transition: all .3s ease-in-out;
+    padding: 20px;
+    border-radius: 50%;
+}
+.header-container .menu-hollie  .menu li:nth-child(4) i:hover{
+    color: rgb(82, 151, 197);
+    box-shadow: 0 4px 12px rgb(82, 151, 197), 0 4px 30px rgb(52, 117, 160),0 5px 40px  rgb(17, 98, 153);
+    transform: translateY(-20px);
+}
+.header-container .menu-hollie  .menu li:nth-child(5) i:hover{
+    color: rgb(144, 63, 151);
+    box-shadow: 0 4px 12px rgb(144, 63, 151), 0 4px 30px rgb(117, 39, 124),0 5px 40px rgb(157, 17, 170);
+    transform: translateY(-20px);
+}
+.header-container .menu-hollie  .menu li:nth-child(6) i:hover{
+    color: rgb(58, 180, 119);
+    box-shadow: 0 4px 12px rgb(58, 180, 119), 0 4px 30px rgb(29, 133, 81),0 5px 40px rgb(26, 170, 98);
+    transform: translateY(-20px);
+}
 .header-container .menu-hollie  .menu li a{
     display: block;
     font-size: 3em;
@@ -136,6 +166,7 @@ img{
     width: 100%;
     height: 250px;
     object-fit: cover;
+    z-index: -1;
 }
 .container-cards{
     max-width: 950px;
@@ -186,6 +217,25 @@ img{
 .conteudo-main .info-main .info-adres{
     display: block;
     margin-top: 20%;
+}
+.conteudo-main .info-main .info-adres .interes::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-bottom: 8px;
+    background-color: #000;
+    transition: all .8s ease-in-out;
+}
+.conteudo-main .info-main .info-adres .interes:hover::after{
+    width: 60%;
+}
+.conteudo-main .info-main .info-adres .interes h2{
+    color: #333;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+    cursor: pointer;
 }
 .conteudo-main .info-main .info-adres .email p{
     font-size: 1.2em;
