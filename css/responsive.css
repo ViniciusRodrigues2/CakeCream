@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+@media screen and (min-width:700px) {
+    /* zera mobile */
+    .header-container .menu-hollie .menu-action{
+        display: none;
+    }
+    .header-container .menu-hollie .menu{
+        position: sticky;
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        opacity: 1;
+        background-color: rgb(255, 255, 255);
+        list-style: none;
+    }
+    .header-container .menu-hollie  .menu li:nth-child(1){
+        margin-top: 0%;
+    }
+    .header-container .menu-hollie  .menu li a{
+        display: block;
+        font-size: 1.5em;
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+        padding: 5px 15px;
+        transition: all .3s ease-in-out;
+        text-transform: capitalize;
+    }
+    .header-container .menu-hollie .menu li:nth-child(4),.header-container .menu-hollie .menu li:nth-child(5),.header-container .menu-hollie .menu li:nth-child(6){
+        display: none;
+    }
+    .header-container .menu-hollie .menu li i{
+        display: none;
+    }
+    /* zerar mobile end */
+
+
+
+    /* arrumar menu */
+    .header-container .menu-hollie  .menu li a:hover{
+        color: brown;
+    }
+    .header-container .menu-hollie  .menu li:nth-child(3){
+        margin-right: 45px;
+    }
+    .header-container .menu-hollie  .menu li a.activo{
+        background-color: #BF9390;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 15px;
+    }
+    /* ARRUMAR MENU END */
+    .header-container .logo{
+        padding-left: 60px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+    .rodape{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .rodape .uls{
+        display: flex;
+    }
+    .rodape .uls ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    .rodape .uls ul li a{
+        text-decoration: none;
+        color: black;
+    }
+    .rodape .uls ul li a i{
+        font-size: 1.2em;
+        transition: all .3s ease-in-out;
+    }
+    .rodape .uls ul li a i:hover{
+        color: #BF9390;
+        transform: scale(1.2);
+    }
+
+}
+@media screen and (max-width:350px) {
+    .container-cards{
+       display: flex;
+       flex-wrap: wrap;
+    }
+    .container-cards .card{
+        flex: 100%;
+    }
+    .header-container .logo a{
+        font-size: 6vw;
+    }
+}
