@@ -8,173 +8,133 @@
     box-sizing: border-box;
     font-family: 'Dosis', sans-serif;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-}
-.container-show{
-    width: 100%;
-    display: block;
-}
-.container-show .container-oction{
-    background-color: rgb(31, 30, 30);
-    width: 100vw;
-    height: 50vh;
-    color: white;
+
+.container{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 8vh;
+    border: 1px solid #e4e4e4;
+    box-shadow: 0 4px 10px #c5c5c5;
 }
-.container-show .logo{
-    width: 100%;
-    height: 5vh;
-    background-color: #141414;
-}
-.container-show .logo a{
-    color: rgb(255, 255, 255);
-    font-size: 1.3em;
+.container .logo a{
     text-decoration: none;
-    padding: 0 15px;
-    line-height: 5vh;
+    font-size: 1.5em;
+    color: #03030e;
     text-transform: capitalize;
+    font-weight: 200;
 }
-.container-show .container-oction h1{
-    text-transform: uppercase;
-    border-bottom: 2px solid white;
+
+.conteudo{
+    max-width: 920px;
 }
-.container-show .container-oction p{
+.conteudo .content-primary{
     width: 100%;
-    text-align: center;
-    margin: 20px;
 }
-
-.container-show .image{
-    margin-top: 20px;
-    margin-bottom: 60px;
-    text-align: center;
+.conteudo .content-primary .image-act{
+    max-width:400px;
+    margin: 3em auto 0 auto;
 }
-.container-show .image img{
-    width: 90%;
-    object-fit: cover;
-    transition: all .5s ease-out;
+.conteudo .content-primary .image-act img{
+    width: 100%;
 }
-.container-show .pagrafos{
-    margin-left: 20px;
+.conteudo .content-primary .sobre-nos{
+    margin: 6% 0 0 8%;
 }
-/* HEADER END */
-
-.conteudo-sobre{
-    width: 100vw;
+.conteudo .content-primary .sobre-nos h1{
+    font-size: 2em;
+    color: #505050;
+    text-transform: uppercase;
 }
-.conteudo-sobre .qualy{
-    max-width: 950px;
-    text-align: center;
-    margin: 0 auto;
+.conteudo .content-primary .text-container{
+    margin-left: 2.5em;
+    padding: 1.2em 0;
 }
-.conteudo-sobre .qualy .nosso-trabalho{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
-.conteudo-sobre .qualy .nosso-trabalho h2{
-    text-align: center;
-    margin-top: 20px;
+.conteudo .content-primary .text-container h2{
+    padding-bottom: 1.15em;
     font-weight: 400;
 }
-.conteudo-sobre .qualy .nosso-trabalho .confei{
-    width: 100vw;
-    background-color: #141414;
+.conteudo .content-primary .text-container p{
+    font-weight: 300;
+    font-size: 1.3em;
+    line-height: 1.5;
+    letter-spacing: 1.1;
 }
-.conteudo-sobre .qualy .nosso-trabalho .confei img{
-    width: 100%;
-}
-.conteudo-sobre .qualy  .galery-container{
-    display:  grid;
-    grid-template-columns: repeat(auto-fit,minmax(350px,250px));
-    margin-top: 30px;
+.conteudo .content-primary .formacoes{
+    display: grid;
+    grid-template-columns: repeat(1,350px);
     justify-content: center;
-    gap: 20px;
 }
-.conteudo-sobre .qualy  .galery-container .image-on-sa img{
-    width: 40vmax;
-    height: 200px;
-    object-fit: cover;
-}
-.conteudo-sobre .qualy .qualidade{
-    width: 100vw;
-    height: 100%;
-    margin-top: 28px;
-}
-.conteudo-sobre .qualy .qualidade h3{
+.conteudo .content-primary .formacoes .text-confi{
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 1.5em;
-    font-weight: 500;
+    margin: 1.4em 0 1.4em 0;
 }
-.conteudo-sobre .qualy .qualidade h3 span{
-    color: rgb(185, 141, 19);
-    border-bottom: 1px solid rgb(194, 143, 14);
-}
-.conteudo-sobre .qualy .qualidade .igre-quali{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-}
-.conteudo-sobre .qualy .qualidade .igre-quali p{
-    display: block;
-    width: 80%;
-    font-size: .95em;
-    text-align: left;
-    padding-left: 20px;
-}
-.conteudo-sobre .qualy .qualidade .marcas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-}
-.conteudo-sobre .qualy .qualidade .marcas ul{
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    margin-left: 20px;
-}
-.conteudo-sobre .qualy .qualidade .marcas ul li a{
-    display: block;
-    text-decoration: none;
-    padding: 10px 10px;
-    font-size: 1.2em;
-    color: #141414;
+.conteudo .content-primary .formacoes .text-confi h2{
+    font-size: 1.8em;
+    font-weight: 400;
+    letter-spacing: 1.4px;
     text-transform: uppercase;
+}
+.conteudo .content-primary .formacoes .icon{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(165, 185, 185);
+    border-radius: 8px;
+}
+.conteudo .content-primary .formacoes .icon .icon-action i{
+    font-size: 1.8em;
+    font-weight: 800;
+}
+.conteudo .content-primary .formacoes .icon .content-text p{
+    font-size: 1.2em;
+    font-weight: 400;
+    letter-spacing: 1.1px;
+    padding: 1.1em 0;
+    color: #222222;
+}
+.conteudo .content-primary .formacoes .icon .btn-oct a{
+    text-decoration: none;
+    color: #03030e;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+.conteudo .content-primary .formacoes .icon .btn-oct a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #03030e;
     transition: all .4s ease-in-out;
 }
-.conteudo-sobre .qualy .qualidade .marcas ul li a:hover{
-    color: #af5d3c;
-    transform: scale(1.3);
+.conteudo .content-primary .formacoes .icon .btn-oct a:hover::after{
+    width: 24%;
 }
-.conteudo-sobre .qualy .qualidade .marcas .choco img{
-    width: 80vw;
+.conteudo .content-primary .image-container{
+    max-width: 600px;
+    margin: 0 auto;
 }
+.conteudo .content-primary .image-container img{
+    width: 100%;
+    box-shadow: 0 5px 20px #c4c4c4;
+}
+
 
 
 
 .rodape{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: rgb(233, 233, 233);
-    margin-top: 20px;
+    justify-content: space-around;
+    background-color: #b9b9b9;
+    height: 8vh;
 }
-.rodape p{
-    font-size: 1.2em;
-    color: #333;
-    font-weight: lighter;
+
+.rodape .uls ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
 }
-.rodape span{
-    color: rgb(165, 80, 10);
+.rodape .uls ul li a{
+    text-decoration: none;
+    color: #000;
 }
