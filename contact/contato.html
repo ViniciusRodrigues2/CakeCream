@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
     <title> contato | Cake Cream</title>
 </head>
 <body>
@@ -28,27 +29,28 @@
 
         <section class="contato-tainer">
             <address id="contacts">
-                <form action="https://wa.link/bkiskp" method="post" class="grid">
+                <form action="https://formsubmit.co/linkvinicius62@gmail.com" method="POST" class="grid">
                     <div class="contact-cards">
                         <label for="name">Seu nome :</label>
-                        <input type="text" name="nome" id="name">
+                        <input type="text" name="name" id="name" required>
                     </div>
                     <div class="contact-cards">
                         <label for="email">Seu email :</label>
-                        <input type="email" name="Email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
                     <div class="contact-cards">
                         <label for="assunto"> assunto:</label>
-                        <input type="text" name="asunt" id="assunto">
+                        <input type="text" name="assunto" id="assunto">
                     </div>
                     <div class="contact-cards">
                         <label for="area">mensage :</label>
-                        <textarea name="area" id="area" cols="30" rows="10"></textarea>
+                        <textarea name="mensagem" id="area" cols="30" rows="10"></textarea>
                     </div>
+                    <input type="hidden" name="_next" value="https://viniciusrodrigues2.github.io/CakeCream/contact/obrigado.html">
                     <div class="contact-cards">
                         <input type="submit" value="enviar" class="btn">
                     </div>
-             </form>
+               </form>
             </address>
         </section>
     </aside>
