@@ -35,6 +35,7 @@ body{
 }
 .conteudo .content-primary{
     width: 100%;
+
 }
 .conteudo .content-primary .image-act{
     max-width:400px;
@@ -70,11 +71,11 @@ body{
     grid-template-columns: repeat(1,350px);
     justify-content: center;
 }
-.conteudo .content-primary .formacoes .text-confi{
+.conteudo .content-primary .text-confi{
     text-align: center;
     margin: 1.4em 0 1.4em 0;
 }
-.conteudo .content-primary .formacoes .text-confi h2{
+.conteudo .content-primary  .text-confi h2{
     font-size: 1.8em;
     font-weight: 400;
     letter-spacing: 1.4px;
@@ -139,6 +140,7 @@ body{
     list-style: none;
     gap: 10px;
 }
+
 .rodape .uls ul li a{
     text-decoration: none;
     color: #000;
