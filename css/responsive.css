@@ -39,7 +39,12 @@
     /* zerar mobile end */
 
 
-
+    .video-container .video-desmonter{
+        width: 720px;
+        height: 400px;
+        margin: 10% auto;
+        
+    }
     /* arrumar menu */
     .header-container .menu-hollie  .menu li a:hover{
         color: brown;
@@ -98,5 +103,16 @@
     }
     .header-container .logo a{
         font-size: 6vw;
+    }
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        align-items: center;
+        justify-content:center;
+    }
+    .rodape .uls ul{
+        display: flex;
+        flex: 1 1 50px;
     }
 }

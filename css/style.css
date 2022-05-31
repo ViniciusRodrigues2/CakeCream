@@ -89,15 +89,10 @@ body{
     overflow: hidden;
     background-color: rgb(255, 255, 255);
     transition: all .4s ease-in;
-    z-index: 999;
+    z-index: 9;
 }
 .header-container .menu-hollie  .menu li:nth-child(1){
     margin-top: 20%;
-}
-.header-container .menu-hollie  .menu li:nth-child(4),.header-container .menu-hollie  .menu li:nth-child(5),.header-container .menu-hollie  .menu li:nth-child(6){
-    display: inline-block;
-    font-size: .85em;
-    margin-top: 3%;
 }
 .header-container .menu-hollie  .menu li i{
     color: #000;
@@ -105,21 +100,7 @@ body{
     padding: 20px;
     border-radius: 50%;
     font-weight: 300;
-}
-.header-container .menu-hollie  .menu li:nth-child(4) i:hover{
-    color: rgb(82, 151, 197);
-    box-shadow: 0 4px 12px rgb(82, 151, 197), 0 4px 30px rgb(52, 117, 160),0 5px 40px  rgb(17, 98, 153);
-    transform: translateY(-20px);
-}
-.header-container .menu-hollie  .menu li:nth-child(5) i:hover{
-    color: rgb(144, 63, 151);
-    box-shadow: 0 4px 12px rgb(144, 63, 151), 0 4px 30px rgb(117, 39, 124),0 5px 40px rgb(157, 17, 170);
-    transform: translateY(-20px);
-}
-.header-container .menu-hollie  .menu li:nth-child(6) i:hover{
-    color: rgb(58, 180, 119);
-    box-shadow: 0 4px 12px rgb(58, 180, 119), 0 4px 30px rgb(29, 133, 81),0 5px 40px rgb(26, 170, 98);
-    transform: translateY(-20px);
+    font-size: .70em;
 }
 .header-container .menu-hollie  .menu li a{
     display: block;
@@ -127,9 +108,11 @@ body{
     text-decoration: none;
     color: black;
     font-weight: 300;
-    padding: 10px;
+    margin-right: 10px;
     text-transform: capitalize;
+    padding-top: 60px;
 }
+
 /* menu end */
 
 
@@ -151,7 +134,6 @@ body{
     top: .22px;
 }
 
-
 .header-container .menu-hollie.active .menu{
     height: calc(106vh - 10vh);
     background-color: white
@@ -160,10 +142,25 @@ body{
 }
 /* menu-action end */
 
-
+.video-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.video-container .video-desmonter{
+    width: 460px;
+    height: 400px;
+    margin: 10% 10px;
+}
+.video-container .video-desmonter video{
+    width: 100%;
+    height: 100%;
+}
 /* main */
 .conteudo-main{
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
 }
 img{
@@ -174,6 +171,7 @@ img{
 }
 .container-cards{
     max-width: 950px;
+    overflow: hidden;
     margin: 0 auto;
    display: grid;
    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
